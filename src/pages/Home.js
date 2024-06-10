@@ -20,7 +20,7 @@ export default class Home extends Component {
             <p className="home-name-1">Valmyr</p>
             <p className="home-name-2">Tavares</p>
             <div className="home-subtitle">
-              <p className="home-subtitle-1">Desenvolvedora front-end</p>
+              <p className="home-subtitle-1">Desenvolvedor front-end</p>
               <span>|</span>
               <p className="home-subtitle-2">
                 Estudante de Desenvolvimento Web Full Stack

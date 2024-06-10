@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
-import allProjects from '../data/allProjects';
-import IndividualProject from './IndividualProject';
+ import ReactGA from 'react-ga';
+// import allProjects from '../data/allProjects';
+// import IndividualProject from './IndividualProject';
 
 export default class ListProjects extends Component {
   componentDidMount() {
@@ -10,7 +10,8 @@ export default class ListProjects extends Component {
   render() {
     return (
       <>
-      {allProjects.map((project) => (<IndividualProject key={project.id} project={project} />))}
+      <h1 style={{color:"red"}}>TESTE TESTE TESTE </h1>
+      
     </>
     )
   }

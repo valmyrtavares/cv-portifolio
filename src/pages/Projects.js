@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import { Icon } from '@iconify/react';
+import React from 'react';
+//import { Icon } from '@iconify/react';
 import Header from '../components/Header';
 import ListProjects from './ListProjects';
 
 import '../styles/pages/projects.scss';
 
-export default class Projects extends Component {
-  render() {
+const Projects = () => {  
     return (
       <div className="dark-background">
-        <div className="header-social-media">
-          <Header />
+        <Header/>
+        {/* <div className="header-social-media">
+          
           <section className="header-social-media-section">
             <a href="https://www.linkedin.com/in/danielle-lsilva/" target="_blank" rel="noopener noreferrer">
               <Icon icon="akar-icons:linkedin-fill" />
@@ -26,7 +26,7 @@ export default class Projects extends Component {
               <Icon icon="ant-design:mail-outlined" />
             </a>
           </section>
-        </div>
+        </div> */}
         
         <div className="project">
 
@@ -38,5 +38,6 @@ export default class Projects extends Component {
       </div>
       
     )
-  }
+  
 }
+export default Projects
