@@ -1,120 +1,113 @@
-import React, { Component } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import React from 'react';
 import ReactGA from 'react-ga';
 import { Icon } from '@iconify/react';
 import hardSkillsIcons from '../data/hardSkillsIcons';
-import image from '../assets/portfolio-img.jpg';
+import image from '../assets/Valmyr.JPG';
 
 import Header from '../components/Header';
 import SocialMedia from '../components/SocialMedia';
 
 import '../styles/pages/about.scss';
 
+const About = () => {
+  const [language, setLanguage] = React.useState(true);
 
-export default class About extends Component {
-  componentDidMount() {
+  React.useEffect(() => {
     ReactGA.pageview(window.location.pathname);
+  }, []);
+
+  function handleLaguage() {
+    language ? setLanguage(false) : setLanguage(true);
   }
-  render() {
-    return (
-      <div className="all-about">
-        <Header />
-        <section className="about">
-          <div className="about-header-text-skills" >
-            
-            <div className="about-text-skills">
+
+  return (
+    <div className="all-about">
+      <Header />
+      <button className=" btn btn-success" onClick={handleLaguage}>
+        {language ? 'English' : ' Portugues '}
+      </button>
+      <section className="about">
+        <div className="about-header-text-skills">
+          <div className="about-text-skills">
+            {language ? (
               <section className="about-text">
                 <p className="about-text-p about-text-p-1">Olá, </p>
-                
-                <p className="about-text-p about-text-p-2">meu nome é <span>Danielle Silva</span></p>
-                
-                <p className="about-text-p about-text-p-3">Sou desenvolvedora <span>full-stack</span> e atuo como Desenvolvedora Front-end na <span>Inteligov</span> !</p>
-                
-                <p className="about-text-p about-text-p-3">Atualmente estou aprimorando minhas habilidades em <span>ReactJS</span> e em <span>UX design</span>, com o objetivo de me especializar em <span>Fron-end</span>, e aprendendo <span>React Native</span>, <span>Ruby</span> e <span>Ruby on Rails</span> que são muito utilizados na minha atual empresa</p>
-                
-                <p className="about-text-p about-text-p-5"><span>Até o momento me identifico mais com front-end e pretendo continuar com esse foco, mas acho importante explorar os horizontes de back-end também.</span></p>
 
-                <p className="about-text-p about-text-p-4"><span>Fun fact</span>: Sou bióloga por formação e por muito tempo não imaginava um futuro trabalhando na área da tecnologia! Essa impressão não durou nem o primeiro mês de curso na <span>Trybe</span>, foi só dar uma chance para acabar apaixonada pela área, sinto que encontrei meu caminho!</p>
-                
-                <p className="about-text-p about-text-p-6">Espero que goste do meu portfólio!</p>
+                <p className="about-text-p about-text-p-2">
+                  Desenvolvedor Front End com experiência profissional nos
+                  principais frameworks <span>javascript/typescript</span> como
+                  <span>Vue.js, Angular e React</span>
+                </p>
+
+                <p className="about-text-p about-text-p-3">
+                  Atua no mercado desde 2018, trabalhando em correção de bugs,
+                  criação de telas e novas funcionalidades em vários sistemas.
+                  No ano de 2022 e 2023 trabalhou especialmente no ramo de
+                  telecomunicações na empresa Netcracker. Em 2021 e 2022 atuou
+                  em sistemas de concursos públicos, que elaborava provas e
+                  organizava locais de exames na empresa Fundação Carlos Chagas,
+                  entre outras experiências também trabalhou na criação de
+                  E-commerces na empresa Seller Face
+                </p>
+
+                <p className="about-text-p about-text-p-5">
+                  Tem experiência em backend nas linguagens PHP e Node.js, mas
+                  sempre atuou como full-satck em projetos menores free lancer
+                </p>
               </section>
-              <div className="about-image">
-            <img className="about-img" src={image} alt="profile" /> 
-          </div>
-              <section className="about-skills">
-                <p className="about-skills-p">SKILLS</p>
-                <div className="about-skill">
-                {hardSkillsIcons.map((icon, index) => (
-                    <div key={index} className="about-div-icon">
-                      <Icon icon={icon.icon} className={icon.className} />
-                    <p className='about-icon-text'>{icon.title}</p>
-                    </div>
-                  ))}
-                </div>
+            ) : (
+              <section className="about-text">
+                <p className="about-text-p about-text-p-1">Hi, </p>
+
+                <p className="about-text-p about-text-p-2">
+                  Front End Developer with professional experience in major{' '}
+                  <span>JavaScript/TypeScript frameworks</span> such as
+                  <span> Vue.js, Angular, and React.</span>
+                </p>
+
+                <p className="about-text-p about-text-p-3">
+                  I've been active in the market since 2018, focusing on bug
+                  fixing, UI/UX design, and implementing new features across
+                  various systems. In the years 2022 and 2023, I've been
+                  primarily engaged in the telecommunications sector at
+                  Netcracker. During 2021 and 2022, I contributed to public
+                  examination systems, developing test materials and
+                  coordinating examination venues at Fundação Carlos Chagas.
+                  Prior to these roles, I've also contributed to E-commerce
+                  projects at Seller Face company.
+                </p>
+
+                <p className="about-text-p about-text-p-5">
+                  While my background includes some knowledge of backend
+                  technologies like PHP and Node.js, my professional roles have
+                  predominantly centered around frontend responsibilities. Any
+                  backend experience I possess has been mainly utilized in
+                  freelance projects.
+                </p>
               </section>
+            )}
+            <div className="about-image">
+              <img className="about-img" src={image} alt="profile" />
             </div>
-            
+            <section className="about-skills">
+              <p className="about-skills-p">SKILLS</p>
+              <div className="about-skill">
+                {hardSkillsIcons.map((icon, index) => (
+                  <div key={index} className="about-div-icon">
+                    <Icon icon={icon.icon} className={icon.className} />
+                    <p className="about-icon-text">{icon.title}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
           </div>
-          
-          <SocialMedia />
-        </section>
-        
-      </div>
-      
-    )
-  }
-}
+        </div>
 
+        <SocialMedia />
+      </section>
+    </div>
+  );
+};
 
-// export default class About extends Component {
-//   render() {
-//     return (
-//       <div className='dark-background'>
-//         <Header />
-
-//         <main className="about">
-        
-//           <section className="about-intro">
-//             <div className="about-text-section">
-//               <p>Olá</p>
-//               <p>meu nome é <span>Danielle Silva</span></p>
-//               <p>Sou desenvolvedora <span>Front-end</span>, mas continuo como estudante da Trybe com o objetivo de me tornar uma desenvolvedora <span>Web Full Stack</span>.</p>
-//               <p>Um pouco sobre minha história, sou <span>bióloga</span> por formação mas resolvi mudar minha vida e dar uma chance para a área da <span>tecnologia</span>, não contava que acabaria me apaixonando, sinto que realmente me encontrei.</p>
-//               <p>Até o momento meu foco é <span>Front-end</span>, mas estou gostando de explorar os horizontes de Back-end também.</p>
-//               <p>Espero que goste do meu portfólio!</p>
-//             </div>
-//             <img className="about-img" src={image} alt="profile" /> 
-//           </section>
-//           <div className="arrow">
-//             <a href='#about' className="arrow-link arrow-point"></a>
-            
-//           </div>
-
-//           <section className="about-skills" id='about'>
-//             <div className="div-skills-title">
-//               <p className="about-skills-title">Habilidade atuais</p>
-//             </div>
-          
-//             <div className="about-both-skills-section about-div-hard-skills-icon-text">
-//               <div className="about-skills-subtitle">
-//                 <p className="about-title">Hard skills</p>
-//               </div>
-              
-//               <div className="about-hard-skills">
-
-//                 {hardSkillsIcons.map((icon) => (
-//                   <div key={icon.id} className="about-div-icon-text">
-//                     <Icon icon={icon.icon} className={icon.className} />
-//                   <p>{icon.title}</p>
-//                   </div>
-//                 ))}       
-//               </div>
-//             </div>
-            
-//           </section>
-          
-//         </main>
-//       </div>
-      
-//     )
-//   }
-// }
+export default About;

@@ -2,98 +2,108 @@ const hardSkillsIcons = [
   {
     icon: 'akar-icons:react-fill',
     className: 'about-icon',
-    title: 'ReactJS' 
+    title: 'ReactJS',
   },
   {
     icon: 'cib:javascript',
     className: 'about-icon',
-    title: 'JavaScript' 
+    title: 'JavaScript',
   },
   {
     icon: 'akar-icons:sass-fill',
     className: 'about-icon',
-    title: 'Sass' 
+    title: 'Sass',
   },
   {
     icon: 'fontisto:css3',
     className: 'about-icon',
-    title: 'CSS' 
+    title: 'CSS',
   },
   {
-    icon: 'tabler:brand-mantine',
+    icon: 'cib:firebase',
     className: 'about-icon',
-    title: 'Mantine' 
+    title: 'Firebase',
   },
   {
     icon: 'simple-icons:mui',
     className: 'about-icon',
-    title: 'Material UI' 
+    title: 'Material UI',
   },
   {
     icon: 'akar-icons:bootstrap-fill',
     className: 'about-icon',
-    title: 'Bootstrap' 
+    title: 'Bootstrap',
   },
   {
     icon: 'icomoon-free:html-five',
     className: 'about-icon',
-    title: 'HTML' 
+    title: 'HTML',
   },
   {
     icon: 'akar-icons:redux-fill',
     className: 'about-icon',
-    title: 'Redux' 
+    title: 'Redux',
   },
   {
     icon: 'bi:git',
     className: 'about-icon',
-    title: 'Git' 
+    title: 'Git',
   },
   {
     icon: 'fontisto:github',
     className: 'about-icon',
-    title: 'GitHub' 
+    title: 'GitHub',
   },
 
   {
     icon: 'simple-icons:jest',
     className: 'about-icon',
-    title: 'Jest' 
+    title: 'Jest',
   },
   {
     icon: 'fontisto:mysql',
     className: 'about-icon',
-    title: 'MySQL' 
+    title: 'MySQL',
   },
   {
-    icon: 'file-icons:docker',
+    icon: 'simple-icons:mongodb',
     className: 'about-icon',
-    title: 'Docker' 
+    title: 'Mongo DB',
   },
   {
     icon: 'bxl:nodejs',
     className: 'about-icon',
-    title: 'NodeJS' 
+    title: 'NodeJS',
   },
   {
     icon: 'cib:typescript',
     className: 'about-icon',
-    title: 'Typescript' 
+    title: 'Typescript',
   },
   {
-    icon: 'tabler:brand-react-native',
+    icon: 'fontisto:vuejs',
     className: 'about-icon',
-    title: 'React Native' 
+    title: 'Vue.js',
   },
   {
-    icon: 'cib:ruby',
+    icon: 'devicon-plain:angularjs',
     className: 'about-icon',
-    title: 'Ruby' 
+    title: 'Angular',
   },
   {
-    icon: 'mdi:language-ruby-on-rails',
+    icon: 'file-icons:nextjs',
     className: 'about-icon',
-    title: 'Ruby on Rails' 
+    title: 'Next.js',
+  },
+  {
+    icon: 'vscode-icons:folder-type-prisma',
+    className: 'about-icon',
+    title: 'Prisma',
+  },
+  {
+    icon: 'simple-icons:express',
+    className: 'about-icon',
+    title: 'Express',
   },
 ];
 
