@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
- import ReactGA from 'react-ga';
+import React, { Component } from "react";
+import ReactGA from "react-ga";
 // import allProjects from '../data/allProjects';
 // import IndividualProject from './IndividualProject';
 
@@ -10,9 +10,8 @@ export default class ListProjects extends Component {
   render() {
     return (
       <>
-      <h1 style={{color:"red"}}>TESTE TESTE TESTE </h1>
-      
-    </>
-    )
+        <h1 style={{ color: "red" }}>TESTE TESTE TESTE </h1>
+      </>
+    );
   }
 }

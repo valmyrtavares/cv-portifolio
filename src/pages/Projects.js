@@ -1,43 +1,46 @@
-import React from 'react';
+import React from "react";
 //import { Icon } from '@iconify/react';
-import Header from '../components/Header';
-import ListProjects from './ListProjects';
+import Header from "../components/Header";
+//import ListProjects from './ListProjects';
+import gif from "../assets/SegundoGifTeste.gif"; // Importando o GIF
 
-import '../styles/pages/projects.scss';
+import "../styles/pages/projects.scss";
 
-const Projects = () => {  
-    return (
-      <div className="dark-background">
-        <Header/>
-        {/* <div className="header-social-media">
-          
-          <section className="header-social-media-section">
-            <a href="https://www.linkedin.com/in/danielle-lsilva/" target="_blank" rel="noopener noreferrer">
-              <Icon icon="akar-icons:linkedin-fill" />
-            </a>
-            <a href="https://github.com/daniellelsilva" target="_blank" rel="noopener noreferrer">
-              <Icon icon="bi:github" />
-            </a>
-            <a href="https://www.instagram.com/ls_danielle/" target="_blank" rel="noopener noreferrer">
-              <Icon icon="bi:instagram" />
-            </a>
-
-            <a href="mailto:danielle.luisasilva@gmail.com" target="_blank" rel="noopener noreferrer">
-              <Icon icon="ant-design:mail-outlined" />
-            </a>
-          </section>
-        </div> */}
-        
-        <div className="project">
-
-        <section className='project-thumbnail-section'>
-          <ListProjects />
-        </section>
-        
-      </div>
-      </div>
-      
-    )
-  
-}
-export default Projects
+const Projects = () => {
+  return (
+    <div className="dark-background">
+      <Header />
+      <section>
+        <h1>Projeto CMS Angular Casa de veraneio</h1>
+        <div className="project-container">
+          <div>
+            <p style={{ color: "white" }}>
+              Esse é um projeto sobre uma casa de veraneio com CMS que
+              proporciona o completo gerenciamento pelo administrador do
+              empreendimento para adicionar imagens, promoções, parcerias, redes
+              sociais no estilo wordpress.{" "}
+            </p>
+            <p>
+              Foi completamente construído com Angular e Mobile First. Aqui
+              temos uma breve apresentação das partes principais do projeto
+              facilitando o entendimento desde o design até o código de todas as
+              partes.
+            </p>
+            <p>
+              O backend foi todo desenvolvido com as ferramentas realtime e
+              storage da plataforma firebase do google, criando toda a parte
+              administrativa do usuário, fazendo com que as todas as imagens
+              possam ser selecionadas diretamente da plataforma do usuário tanto
+              no desktop quanto no mobile.
+            </p>
+          </div>
+          <div>
+            {" "}
+            <img src={gif} alt="Gif do projeto" />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+export default Projects;
