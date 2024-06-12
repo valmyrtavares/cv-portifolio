@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import ReactGA from 'react-ga';
-import { Icon } from '@iconify/react';
-import hardSkillsIcons from '../data/hardSkillsIcons';
-import image from '../assets/Valmyr.JPG';
+import React from "react";
+import ReactGA from "react-ga";
+import { Icon } from "@iconify/react";
+import hardSkillsIcons from "../data/hardSkillsIcons";
+import image from "../assets/Valmyr.JPG";
 
-import Header from '../components/Header';
-import SocialMedia from '../components/SocialMedia';
+import Header from "../components/Header";
+import SocialMedia from "../components/SocialMedia";
 
-import '../styles/pages/about.scss';
+import "../styles/pages/about.scss";
 
 const About = () => {
   const [language, setLanguage] = React.useState(true);
@@ -24,8 +24,8 @@ const About = () => {
   return (
     <div className="all-about">
       <Header />
-      <button className=" btn btn-success" onClick={handleLaguage}>
-        {language ? 'English' : ' Portugues '}
+      <button onClick={handleLaguage}>
+        {language ? "English" : " Portugues "}
       </button>
       <section className="about">
         <div className="about-header-text-skills">
@@ -61,7 +61,7 @@ const About = () => {
                 <p className="about-text-p about-text-p-1">Hi, </p>
 
                 <p className="about-text-p about-text-p-2">
-                  Front End Developer with professional experience in major{' '}
+                  Front End Developer with professional experience in major{" "}
                   <span>JavaScript/TypeScript frameworks</span> such as
                   <span> Vue.js, Angular, and React.</span>
                 </p>

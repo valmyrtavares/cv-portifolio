@@ -6,6 +6,24 @@
   background-size: cover;
   width: 100%;
   min-height: 100vh;
+  button {
+    position: relative;
+    top: 5rem;
+    font-weight: 700;
+    left: 40%;
+    padding: 5px 23px;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 15;
+
+    @include respond(tab-port-small) {
+      left: 70%;
+      top: 7rem;
+      padding-left: 3px;
+    }
+  }
 }
 
 .about {
