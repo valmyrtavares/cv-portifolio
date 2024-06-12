@@ -3,7 +3,7 @@ import React from "react";
 import ReactGA from "react-ga";
 import { Icon } from "@iconify/react";
 import hardSkillsIcons from "../data/hardSkillsIcons";
-import image from "../assets/Valmyr.JPG";
+import image from "../styles/images/PersonalPhoto.PNG";
 
 import Header from "../components/Header";
 import SocialMedia from "../components/SocialMedia";
@@ -37,7 +37,7 @@ const About = () => {
                 <p className="about-text-p about-text-p-2">
                   Desenvolvedor Front End com experiência profissional nos
                   principais frameworks <span>javascript/typescript</span> como
-                  <span>Vue.js, Angular e React</span>
+                  <span> Vue.js, Angular e React</span>
                 </p>
 
                 <p className="about-text-p about-text-p-3">

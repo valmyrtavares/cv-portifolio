@@ -221,12 +221,12 @@
   &-img {
     position: fixed;
     overflow: hidden;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 40%;
+    top: 56px;
+    right: 175px;
+    height: 151%;
+    width: 19%;
     object-fit: cover;
-    object-position: 50% 30%;
+    object-position: 47% 30%;
 
     @include respond(tab-land) {
       width: 45%;
