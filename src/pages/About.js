@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import ReactGA from "react-ga";
-import Profile from "../components/Profile";
-import Header from "../components/Header";
-import SocialMedia from "../components/SocialMedia";
-import SkillTraining from "../components/SkillTraining";
+import React from 'react';
+import ReactGA from 'react-ga';
+import Profile from '../components/Profile';
+import Header from '../components/Header';
+import SocialMedia from '../components/SocialMedia';
+//import SkillTraining from "../components/SkillTraining";
 
-import "../styles/pages/about.scss";
+import '../styles/pages/about.scss';
 
 const About = () => {
   const [language, setLanguage] = React.useState(true);
@@ -23,11 +23,11 @@ const About = () => {
     <div className="all-about">
       <Header />
       <button onClick={handleLaguage}>
-        {language ? "English" : " Portugues "}
+        {language ? 'English' : ' Portugues '}
       </button>
       <section className="about">
         <Profile language={language} />
-        <SkillTraining />
+
         <SocialMedia />
       </section>
     </div>

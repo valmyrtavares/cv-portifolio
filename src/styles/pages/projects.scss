@@ -1,6 +1,7 @@
 @import "../main.scss";
 
 .dark-background {
+  height:100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("../images/vanishing-stripes-project.svg");
   background-size: cover;
@@ -11,14 +12,19 @@
     h1 {
       color: $color-green;
       text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 7vh;
     }
     .project-container {
+      .inside-title{
+        color:white;
+        margin: 10px 10px;
+        font-weight: 700;
+      }
       max-width: 100rem;
       margin: 10px auto;
       display: grid;
       gap: 40px !important;
-      grid-template-columns: minmax(350px, 1fr) 1fr;
+      grid-template-columns: minmax(350px, 3fr) 1fr;
       gap: 10px;
       padding-left: 31px;
       @include respond(tab-port-small) {
@@ -33,6 +39,22 @@
         padding: 5%;
       }
     }
+  }
+  .project-text{
+    column-count: 3;
+    font-size: 1.5rem;
+    column-gap: 40px;
+    color:white;
+    padding: 10px;  
+  }
+  @include respond(tab-port-small) {
+    .project-text {
+        column-count: 1;
+        font-size: 1.5rem;
+        column-gap: 40px;
+        color: white;
+        padding: 30px;
+      }
   }
 }
 

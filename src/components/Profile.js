@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import image from "../styles/images/PersonalPhoto.PNG";
-import PropTypes from "prop-types";
+import React from 'react';
+import image from '../styles/images/PersonalPhoto.PNG';
+import PropTypes from 'prop-types';
+import SkillTraining from '../components/SkillTraining';
 
 const Profile = ({ language }) => {
   return (
@@ -10,7 +11,7 @@ const Profile = ({ language }) => {
         {language ? (
           <section className="about-text">
             <p>
-              <span>Olá,</span>{" "}
+              <span>Olá,</span>{' '}
             </p>
 
             <p>
@@ -48,11 +49,11 @@ const Profile = ({ language }) => {
         ) : (
           <section>
             <p>
-              <span>Hi,</span>{" "}
+              <span>Hi,</span>{' '}
             </p>
 
             <p>
-              Front End Developer with professional experience in major{" "}
+              Front End Developer with professional experience in major{' '}
               <span>JavaScript/TypeScript frameworks</span> such as
               <span> Vue.js, Angular, and React.</span>
             </p>
@@ -76,6 +77,7 @@ const Profile = ({ language }) => {
             </p>
           </section>
         )}
+        <SkillTraining />
       </div>
       <div className="profile-image">
         <img src={image} alt="profile" />
