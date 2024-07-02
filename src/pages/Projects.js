@@ -4,6 +4,7 @@ import Header from '../components/Header';
 //import ListProjects from './ListProjects';
 import desk from '../assets/desktop.gif'; // Importando o GIF
 import mobile from '../assets/mobile.gif'; // Importando o GIF
+import SocialMedia from '../components/SocialMedia';
 
 import '../styles/pages/projects.scss';
 
@@ -31,34 +32,42 @@ const Projects = () => {
             wordpress.{' '}
           </p>
           <p>
-            Foi completamente construído com Angular e Mobile First. Aqui temos
-            uma breve apresentação das partes principais do projeto facilitando
-            o entendimento desde o design até o código de todas as partes.
+            Foi completamente construído com Angular com uma abordagem Mobile
+            First, mas também tem com uma versão para desktop . A Home tem um
+            formato inicial de land page, com uma grande página vertical onde se
+            pode chamar as seções de objetos da casa, interiores, promoções,
+            opiniões dos clientes Aqui eu ofereço uma{' '}
+            <a
+              href="https://docs.google.com/document/d/11DM5CFHE5VNcDCnbtJU0A14ib3OCgvuLlhsZemB-TQg/edit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              documentação
+            </a>{' '}
+            breve das partes principais do projeto facilitando o entendimento
+            desde o design até o código de todas as partes.
           </p>
           <p>
             O backend foi todo desenvolvido com as ferramentas realtime e
-            storage da plataforma firebase do google, criando toda a parte
+            storage da plataforma Firebase do google, criando toda a parte
             administrativa do usuário, fazendo com que as todas as imagens
             possam ser selecionadas diretamente da plataforma do usuário tanto
-            no desktop quanto no mobile. O backend foi todo desenvolvido com as
-            ferramentas realtime e storage da plataforma firebase do google,
-            criando toda a parte administrativa do usuário, fazendo com que as
-            todas as imagens possam ser selecionadas diretamente da plataforma
-            do usuário tanto no desktop quanto no mobile.
+            no desktop quanto no mobile. Uma solução simples e robusta para que
+            o foco do projeto possa ficar no frontend.
           </p>
           <p>
-            O backend foi todo desenvolvido com as ferramentas realtime e
-            storage da plataforma firebase do google, criando toda a parte
-            administrativa do usuário, fazendo com que as todas as imagens
-            possam ser selecionadas diretamente da plataforma do usuário tanto
-            no desktop quanto no mobile. O backend foi todo desenvolvido com as
-            ferramentas realtime e storage da plataforma firebase do google,
-            criando toda a parte administrativa do usuário, fazendo com que as
-            todas as imagens possam ser selecionadas diretamente da plataforma
-            do usuário tanto no desktop quanto no mobile.
+            Nesse outro link você pode acessar o projeto real, navegando pelo
+            projeto e tendo acesso a toda parte administrativa.{' '}
+            <a
+              href="https://valmyrtavares.github.io/whitehouse.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LINK DO PROJETO
+            </a>
           </p>
-          <a src="www.google.com">Documentação do projeto</a>
         </div>
+        <SocialMedia />
       </section>
     </div>
   );

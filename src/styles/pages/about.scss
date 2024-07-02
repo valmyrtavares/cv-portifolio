@@ -42,6 +42,9 @@
         .about-text{
           font-size:1.3rem;
           padding:5px;
+          p span {
+              font-size:1.5rem;
+            }
         }
         .profile-image{
           max-height: 300px;
@@ -64,7 +67,7 @@
               font-size: 1.7em;          
             }
             .about-icon-text{
-              font-size:10px;
+              font-size:10px;              
             }
 
           }

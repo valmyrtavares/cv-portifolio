@@ -46,6 +46,9 @@
     column-gap: 40px;
     color:white;
     padding: 10px;  
+    a{
+      color: yellow
+    }
   }
   @include respond(tab-port-small) {
     .project-text {

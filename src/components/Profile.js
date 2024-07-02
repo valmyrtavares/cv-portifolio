@@ -33,17 +33,19 @@ const Profile = ({ language }) => {
 
             <p>
               Tem experiência em backend nas linguagens PHP e Node.js, mas
-              sempre atuou como full-satck em projetos menores free lancer
+              sempre atuou como full-satck em projetos como free lancer
             </p>
             <p>
-              Atua no mercado desde 2018, trabalhando em correção de bugs,
-              criação de telas e novas funcionalidades em vários sistemas. No
-              ano de 2022 e 2023 trabalhou especialmente no ramo de
-              telecomunicações na empresa Netcracker. Em 2021 e 2022 atuou em
-              sistemas de concursos públicos, que elaborava provas e organizava
-              locais de exames na empresa Fundação Carlos Chagas, entre outras
-              experiências também trabalhou na criação de E-commerces na empresa
-              Seller Face
+              " Eu acredito que todos os processos podem ser simplificados o
+              otimizados trazendo ganho e oportunidades para toda a sociedade.
+              Exatamente por isso sou tão facinado por escrever código. Porque é
+              de forma prática o caminho onde qualquer um com boa vontade e
+              disciplina transforma o mundo e a vida das pessoas, saindo do
+              discursso teórico sustentado por tantos lideres e politicos ao
+              redor do mundo, com a promessas irreais. Programar é realmente ter
+              a oportunidade de transformar ideias em soluções que mudam a vida
+              das pessoas, e cria um mundo senão melhor, mas mais interessante e
+              funcional "
             </p>
           </section>
         ) : (
