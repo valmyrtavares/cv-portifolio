@@ -28,10 +28,43 @@
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      .item1 {
+          order: 1;         
+        }
+      
+        .item2 {
+          order: 2;         
+        }
       @include respond(tab-port-small) {
         display: grid;
         grid-template-columns: 1fr; // Alterar para uma coluna
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 5fr;
+        .about-text{
+          font-size:1.3rem;
+          padding:5px;
+        }
+        .profile-image{
+          max-height: 300px;
+        }
+        .item1 {
+            order: 2;
+            /* Mudar a ordem */
+          }
+        
+          .item2 {
+            order: 1;
+            /* Mudar a ordem */
+          }
+          .about-div-icon{
+            padding-right:4%;
+            .icon-class{
+              font-size: 1.7em;          
+            }
+            .about-icon-text{
+              font-size:10px;
+            }
+
+          }
       }
       .texts {
         color: white;

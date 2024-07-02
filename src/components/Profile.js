@@ -7,7 +7,7 @@ import SkillTraining from '../components/SkillTraining';
 const Profile = ({ language }) => {
   return (
     <div className="container">
-      <div className="texts">
+      <div className="texts item1">
         {language ? (
           <section className="about-text">
             <p>
@@ -79,7 +79,7 @@ const Profile = ({ language }) => {
         )}
         <SkillTraining />
       </div>
-      <div className="profile-image">
+      <div className="profile-image item2">
         <img src={image} alt="profile" />
       </div>
     </div>

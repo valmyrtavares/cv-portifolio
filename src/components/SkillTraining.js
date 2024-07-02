@@ -1,7 +1,7 @@
-import React from "react";
-import { Icon } from "@iconify/react";
-import hardSkillsIcons from "../data/hardSkillsIcons";
-import "../styles/pages/about.scss";
+import React from 'react';
+import { Icon } from '@iconify/react';
+import hardSkillsIcons from '../data/hardSkillsIcons';
+import '../styles/pages/about.scss';
 
 const SkillTraining = () => {
   return (
@@ -10,7 +10,7 @@ const SkillTraining = () => {
       <div className="about-skill">
         {hardSkillsIcons.map((icon, index) => (
           <div key={index} className="about-div-icon">
-            <Icon icon={icon.icon} className={icon.className} />
+            <Icon icon={icon.icon} className={`${icon.className} icon-class`} />
             <p className="about-icon-text">{icon.title}</p>
           </div>
         ))}
