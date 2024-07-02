@@ -10,8 +10,7 @@
   height: 100vh;
 }
 
-.home {
-  // background-color: $color-gray-dark;
+.home {  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,10 +19,10 @@
   justify-content: space-between;
   width: 100%;
 
-  @include respond(phone) {
-    flex-direction: column;
-    justify-content: center;
-  }
+  // @include respond(phone) {
+  //   flex-direction: column;
+  //   justify-content: center;
+  // }
 
   &-section {
     animation: opacityEffect 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) both,
@@ -45,55 +44,55 @@
     height: min-content;
     margin-bottom: -1%;
 
-    @include respond(tab-land) {
-      font-size: 10rem;
-    }
+    // @include respond(tab-land) {
+    //   font-size: 10rem;
+    // }
 
-    @include respond(tab-port-small) {
-      font-size: 7rem;
-      margin-bottom: -7%;
-    }
+    // @include respond(tab-port-small) {
+    //   font-size: 7rem;
+    //   margin-bottom: -7%;
+    // }
 
     @include respond(phone) {
       font-size: 5rem;
       letter-spacing: 1rem;
     }
 
-    @include respond(phone-small) {
-      font-size: 3.7rem;
-      letter-spacing: 0.8rem;
-      margin-bottom: -4%;
-    }
+    // @include respond(phone-small) {
+    //   font-size: 3.7rem;
+    //   letter-spacing: 0.8rem;
+    //   margin-bottom: -4%;
+    // }
   }
 
   &-name-2 {
     font-size: 4rem !important;
-    letter-spacing: 8rem !important;
+    letter-spacing: 8rem ;
     text-transform: uppercase;
     font-weight: 200;
     height: min-content;
     margin: 0;
 
-    @include respond(tab-land) {
-      font-size: 10rem;
-      letter-spacing: 9rem;
-    }
+    // @include respond(tab-land) {
+    //   font-size: 10rem;
+    //   letter-spacing: 9rem;
+    // }
 
-    @include respond(tab-port-small) {
-      font-size: 7rem;
-      letter-spacing: 7.4rem;
-    }
+    // @include respond(tab-port-small) {
+    //   font-size: 7rem;
+    //   letter-spacing: 7.4rem;
+    // }
 
     @include respond(phone) {
       font-size: 5rem;
-      letter-spacing: 4.4rem;
+      letter-spacing: 3.2rem;
     }
 
-    @include respond(phone-small) {
-      box-decoration-break: clone;
-      font-size: 3.7rem;
-      letter-spacing: 3.3rem;
-    }
+    // @include respond(phone-small) {
+    //   box-decoration-break: clone;
+    //   font-size: 3.7rem;
+    //   letter-spacing: 3.3rem;
+    // }
   }
 
   &-subtitle {
