@@ -7,9 +7,9 @@
   background-size: cover;
     button {
       position: relative;
-        top: 6rem;
+        top: 0rem;
         font-weight: 700;
-        left: 72%;
+        left: 80%;
         padding: 5px 23px;
         font-size: 2.6rem;
         background-color: transparent;
@@ -17,11 +17,10 @@
         color: white;
     
         @include respond(tab-port-small) {
-        left: 56%;
-          top: 1103px;
-          padding-left: 3px;
-          font-size: 2.2rem;
-          border: none;
+        left: 73%;          
+        padding-left: 3px;
+        font-size: 2.2rem;
+        border: none;
         }
       }
   section {
