@@ -5,6 +5,25 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("../images/vanishing-stripes-project.svg");
   background-size: cover;
+    button {
+      position: relative;
+        top: 6rem;
+        font-weight: 700;
+        left: 72%;
+        padding: 5px 23px;
+        font-size: 2.6rem;
+        background-color: transparent;
+        border: none;
+        color: white;
+    
+        @include respond(tab-port-small) {
+        left: 56%;
+          top: 1103px;
+          padding-left: 3px;
+          font-size: 2.2rem;
+          border: none;
+        }
+      }
   section {
     max-width: 114rem;
     margin: auto;

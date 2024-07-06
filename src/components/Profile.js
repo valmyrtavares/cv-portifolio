@@ -49,7 +49,7 @@ const Profile = ({ language }) => {
             </p>
           </section>
         ) : (
-          <section>
+          <section className="about-text">
             <p>
               <span>Hi,</span>{' '}
             </p>

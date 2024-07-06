@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d082fb51.css",
-    "main.js": "./static/js/main.d79884dc.js",
+    "main.css": "./static/css/main.c3ba0d25.css",
+    "main.js": "./static/js/main.9332f644.js",
     "static/media/desktop.gif": "./static/media/desktop.25a7786bb6220d353c2e.gif",
     "static/media/mobile.gif": "./static/media/mobile.5747422a6fd78c92698b.gif",
     "static/media/bootstrap-icons.woff?": "./static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
@@ -11,11 +11,11 @@
     "static/media/vanishing-stripes-about.svg": "./static/media/vanishing-stripes-about.2880d6b82427701d3e3c.svg",
     "static/media/vanishing-stripes.svg": "./static/media/vanishing-stripes.414e550fea97ebd5000c.svg",
     "index.html": "./index.html",
-    "main.d082fb51.css.map": "./static/css/main.d082fb51.css.map",
-    "main.d79884dc.js.map": "./static/js/main.d79884dc.js.map"
+    "main.c3ba0d25.css.map": "./static/css/main.c3ba0d25.css.map",
+    "main.9332f644.js.map": "./static/js/main.9332f644.js.map"
   },
   "entrypoints": [
-    "static/css/main.d082fb51.css",
-    "static/js/main.d79884dc.js"
+    "static/css/main.c3ba0d25.css",
+    "static/js/main.9332f644.js"
   ]
 }
