@@ -44,11 +44,12 @@ const Projects = () => {
                 redes sociais no estilo wordpress.{' '}
               </p>
               <p>
-                Foi completamente construído com Angular com uma abordagem
-                Mobile First, mas também tem com uma versão para desktop . A
-                Home tem um formato inicial de land page, com uma grande página
-                vertical onde se pode chamar as seções de objetos da casa,
-                interiores, promoções, opiniões dos clientes Aqui eu ofereço uma{' '}
+                Foi completamente construído com framework Angular com uma
+                abordagem Mobile First, mas também tem com uma versão para
+                desktop. A Home tem um formato inicial de land page, com uma
+                grande página vertical onde se pode chamar as seções de objetos
+                da casa, interiores, promoções, opiniões dos clientes Aqui eu
+                ofereço uma{' '}
                 <a
                   href="https://docs.google.com/document/d/11DM5CFHE5VNcDCnbtJU0A14ib3OCgvuLlhsZemB-TQg/edit"
                   target="_blank"
@@ -62,8 +63,8 @@ const Projects = () => {
               <p>
                 O backend foi todo desenvolvido com as ferramentas realtime e
                 storage da plataforma Firebase do google, criando toda a parte
-                administrativa do usuário, fazendo com que as todas as imagens
-                possam ser selecionadas diretamente da plataforma do usuário
+                administrativa do usuário e fazendo com que as todas as imagens
+                possam ser selecionadas diretamente da plataforma do usuário,
                 tanto no desktop quanto no mobile. Uma solução simples e robusta
                 para que o foco do projeto possa ficar no frontend.
               </p>

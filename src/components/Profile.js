@@ -31,18 +31,18 @@ const Profile = ({ language }) => {
             </p>
             <p>
               Tem experiência em backend nas linguagens PHP e Node.js, mas
-              sempre atuou como full-satck em projetos como free lancer
+              sempre atuou como full stack em projetos como free lancer
             </p>
             <p className="quote">
               {' '}
               Eu acredito que todos os processos podem ser simplificados ou
-              otimizados trazendo ganho e oportunidades para toda a sociedade.
+              otimizados, trazendo ganho e oportunidades para toda a sociedade.
               Exatamente por isso sou tão fascinado por escrever código. Porque
-              é de forma prática o caminho onde qualquer um com boa vontade e
-              disciplina transforma o mundo e a vida das pessoas, saindo do
-              discurso teórico sustentado por tantos líderes e políticos ao
-              redor do mundo, com promessas irreais. Programar é realmente ter a
-              oportunidade de transformar ideias em soluções que mudam a vida
+              é uma forma prática onde qualquer um com boa vontade e disciplina
+              transforma o mundo e a vida das pessoas. Saindo do discurso
+              teórico sustentado por tantos líderes e políticos com promessas
+              irreais ao redor do mundo. Programar é realmente ter a
+              oportunidade de transformar ideias em soluções, que mudam a vida
               das pessoas, e cria um mundo senão melhor, mas mais interessante e
               funcional.
             </p>
