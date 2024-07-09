@@ -35,6 +35,41 @@
         .item2 {
           order: 2;         
         }
+        .about-text {
+          p span {
+            font-size: 1.5rem;
+          }
+
+          .quote {
+            position: relative;
+            font-size: 16px;
+            /* Ajuste o tamanho do texto conforme necessário */
+          }
+
+          .quote::before,
+          .quote::after {
+            content: '"';
+            font-size: 18px;
+            /* Tamanho das aspas */
+            // position: absolute;
+          }
+
+          .quote::before {
+            top: -10px;
+            /* Ajuste a posição conforme necessário */
+            left: -10px;
+            /* Ajuste a posição conforme necessário */
+          }
+
+          .quote::after {
+            bottom: -10px;
+            /* Ajuste a posição conforme necessário */
+            right: 274px;
+            /* Ajuste a posição conforme necessário */
+          }
+
+        }
+
       @include respond(tab-port-small) {
         display: grid;
         grid-template-columns: 1fr; // Alterar para uma coluna
@@ -45,6 +80,34 @@
           p span {
               font-size:1.5rem;
             }
+               .quote {
+                 position: relative;
+                 font-size: 16px;
+                 /* Ajuste o tamanho do texto conforme necessário */
+               }
+   
+               .quote::before,
+               .quote::after {
+                 content: '"';
+                 font-size: 20px;
+                 /* Tamanho das aspas */
+                //  position: absolute;
+               }
+   
+               .quote::before {
+                 top: -10px;
+                 /* Ajuste a posição conforme necessário */
+                 left: -10px;
+                 /* Ajuste a posição conforme necessário */
+               }
+   
+               .quote::after {
+                //  bottom: -10px;
+                 /* Ajuste a posição conforme necessário */
+                  right: 0px;
+                 /* Ajuste a posição conforme necessário */
+               }
+            
         }
         .profile-image{
           max-height: 300px;
@@ -116,7 +179,7 @@
       &-p {
         font-size: 1.7rem;
         font-weight: 700;
-        padding-bottom: 5%;
+        padding-bottom: 5%;       
       }
     }
     &-skill {
