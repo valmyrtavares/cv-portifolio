@@ -68,7 +68,7 @@ const Projects = () => {
                 tanto no desktop quanto no mobile. Uma solução simples e robusta
                 para que o foco do projeto possa ficar no frontend.
               </p>
-              <p>
+              <p style={{ marginBottom: '35px' }}>
                 Nesse outro link você pode acessar o projeto real, navegando
                 pelo projeto e tendo acesso a toda parte administrativa.{' '}
                 <a
@@ -111,7 +111,7 @@ const Projects = () => {
                 simple yet robust solution, enabling the project's focus to
                 remain on the frontend.
               </p>
-              <p>
+              <p style={{ marginBottom: '35px' }}>
                 In this other link, you can access the live project, navigate
                 through it, and explore the entire administrative section.{' '}
                 <a
